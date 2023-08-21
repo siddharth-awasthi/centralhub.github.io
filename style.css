@@ -150,7 +150,7 @@ body{
 }
 
 #css {
-    width: 190px;
+    width: 140px;
     height: 13px;
     background-color: red;
     margin: 15px;
@@ -168,7 +168,7 @@ body{
 }
 
 #js {
-    width: 130px;
+    width: 140px;
     height: 13px;
     background-color: red;
     margin: 15px;
@@ -177,7 +177,7 @@ body{
 }
 
 #python {
-    width: 140px;
+    width: 130px;
     height: 13px;
     background-color: red;
     margin: 15px;
