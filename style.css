@@ -200,7 +200,7 @@ p.percent {
     transition: transform 0.3s ease-in;
 }
 .sidebar nav li a:hover{
-    text-shadow: 0 0 1rem;
+    transform: scale(1.3);
 }
 
 
