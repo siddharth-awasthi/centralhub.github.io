@@ -104,6 +104,8 @@ body{
 }
 
 .contactform form div {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
     padding-top: 19px;
     display: flex;
     flex-direction: column;
