@@ -9,7 +9,7 @@ body{
     display: flex;
     
     height:100%;
-    color: rgb(140, 236, 236);}
+    color: rgb(108, 241, 241);}
 
 .main {
     width: 90vw;    /*background-color: yellow;*/
@@ -17,15 +17,34 @@ body{
 }
 
 .containermain {
-    height: 71vh;
+    height: 80vh;
+    max-height: 600px;
     /* background-color: pink; */
     width: 85vw;
+    max-width: 1000px;
     display: flex;
-    justify-content: space-around;
-    padding-left: 10vw;
+    flex-direction: row;
+    background-color: #483D8B		;
+    justify-content:center;
     font-family: 'Titillium Web', sans-serif;
-    flex-wrap: wrap;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    border-radius: 24px;
+    box-shadow: 0 0 20px rgb(118, 14, 215); 
 }
+.containermain img
+{
+        height: 335px;
+        width: 260px;
+        margin-top: 10vh;
+        border-radius: 24px;
+        margin-right: -23vw ;
+        margin-left:13vw ;
+        box-shadow: 0 0 15px;
+        color: rgb(39, 10, 60);
+}
+
 
 
 
@@ -34,19 +53,32 @@ body{
     padding: 0;
 }
 
-.devpic img {
-    height: 420px;
-    width: 315px;
-    margin-top:10vh;
-}
+
 
 .devinfo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 5vw;
-    margin-left: 5vw;
     font-size: 22px;
+    text-shadow: 0 0 3px;
+}
+.icons ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1.5em;
+}
+.icons li
+{
+    display:block;
+    margin-right: 30px;
+}
+svg
+{
+    display: block;
+    fill: rgb(108, 241, 241);
 }
 
 .hello {
@@ -66,7 +98,6 @@ body{
     font-size: 2.3em;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
-
 }
 
 .btn {
@@ -82,18 +113,20 @@ body{
 .btn:hover {
     background-color: white;
     color: crimson;
-    box-shadow: 
+    box-shadow:0 0 12px; 
     ;
 }
 
-.buttons {
+.buttons{
     margin-top: 23px;
-
 }
 
 .contactform {
     padding: 0 84px;
+}
 
+.form{
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .contactform h1 {
@@ -106,6 +139,7 @@ body{
 .contactform form div {
     font-family: 'Titillium Web', sans-serif;
     font-weight: bold;
+
     padding-top: 19px;
     display: flex;
     flex-direction: column;
@@ -138,8 +172,16 @@ body{
 
 .skills {
     display: flex;
-    color: black;
+    color: rgb(237, 210, 210);
+    justify-content: center;
     margin-top: 15px;
+    box-shadow: 0 0 12px;
+    width: 50vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10%;
+    margin-bottom: 20px;
+    margin-left: 12vw;
 }
 
 #html {
@@ -153,7 +195,7 @@ body{
 }
 
 #css {
-    width: 140px;
+    width: 190px;
     height: 13px;
     background-color: red;
     margin: 15px;
@@ -171,7 +213,7 @@ body{
 }
 
 #js {
-    width: 100px;
+    width: 130px;
     height: 13px;
     background-color: red;
     margin: 15px;
@@ -180,7 +222,7 @@ body{
 }
 
 #python {
-    width: 100px;
+    width: 140px;
     height: 13px;
     background-color: red;
     margin: 15px;
@@ -203,11 +245,8 @@ p.percent {
     transition: transform 0.3s ease-in;
 }
 .sidebar nav li a:hover{
-    text-shadow: 0 0 1rem;
-
+    text-shadow: 0 0 12px;
 }
-
-
 
 .sidebar nav li {
     list-style: none;
@@ -247,7 +286,32 @@ p.percent {
     top: 10px;
     cursor: pointer;
 }
-@media (max-width: 800px) {
+
+@media (width <= 1250px) {
+    .containermain
+    {
+        width: 70vw;
+    }
+ 
+
+}
+
+@media (width <= 1000px) {
+    .containermain
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .containermain img
+    {
+        height: 40vh;
+        width: 30vh;
+        margin: 5vh 0 -20vh 0;
+    }
+}
+
+@media (max-width: 730px) {
     .devinfo{
         font-size: 15px;
     }
