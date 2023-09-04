@@ -24,7 +24,7 @@ body{
     max-width: 1000px;
     display: flex;
     flex-direction: row;
-    background-color: #483D8B		;
+    background-color: #483D8B;
     justify-content:center;
     font-family: 'Titillium Web', sans-serif;
     margin-left: 15vw;
@@ -32,6 +32,7 @@ body{
     margin-top: 10vh;
     border-radius: 24px;
     box-shadow: 0 0 20px rgb(118, 14, 215); 
+    text-align: center;
 }
 .containermain img
 {
@@ -60,7 +61,8 @@ body{
     flex-direction: column;
     justify-content: space-around;
     font-size: 22px;
-    text-shadow: 0 0 3px;
+    color: #e4bcfd;
+    text-shadow: 0 0 2px;
 }
 .icons ul
 {
@@ -78,7 +80,13 @@ body{
 svg
 {
     display: block;
-    fill: rgb(108, 241, 241);
+    fill: rgb(0 , 0 , 0);
+}
+svg:hover
+{
+    cursor: pointer;
+    fill: aliceblue;
+    filter: drop-shadow(0 0 10px rgb(216, 185, 247));
 }
 
 .hello {
@@ -104,15 +112,15 @@ svg
     padding: 9px 13px;
     border-radius: 15px;
     font-size: 15px;
-    color: white;
-    background-color: crimson;
+    color: aliceblue;
+    background-color: rgb(11, 4, 65);
     margin: 10px 10px;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: white;
-    color: crimson;
+    background-color: rgb(196, 190, 222);
+    color:rgb(11, 4, 65);
     box-shadow:0 0 12px; 
     ;
 }
@@ -122,25 +130,36 @@ svg
 }
 
 .contactform {
-    padding: 0 84px;
-}
-
-.form{
+    height: 80vh;
+    max-height: 600px;
+    /* background-color: pink; */
+    width: 85vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    background-color: #483D8B;
+    justify-content:center;
     font-family: 'Titillium Web', sans-serif;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    border-radius: 24px;
+    box-shadow: 0 0 20px rgb(118, 14, 215); 
+    text-align: center;
 }
 
-.contactform h1 {
+
+form h1{
+    color: #e4bcfd;
     font-family: 'Oswald', sans-serif;
-    padding-top: 144px;
-    text-align: center;
-    padding-bottom: 20px;
 }
 
 .contactform form div {
     font-family: 'Titillium Web', sans-serif;
     font-weight: bold;
+    color: #e4bcfd;
 
-    padding-top: 19px;
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
 }
@@ -153,7 +172,7 @@ svg
 .contactform form div input {
     width: 25vw;
     border-radius: 6px;
-    font-size: 12px;
+    font-size: 14px;
     padding: 3px;
 }
 
@@ -161,7 +180,27 @@ svg
     font-size: 14px;
 }
 
+
+.skillsection
+{
+    height: 60vh;
+    max-height: 600px;
+    /* background-color: pink; */
+    width: 85vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: #483D8B;
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    border-radius: 24px;
+    box-shadow: 0 0 20px rgb(118, 14, 215);
+}
 .intro {
+    padding-left: 2vw;
+    padding-right: 2vw;
     font-family: 'Fasthand';
     margin-bottom: 58px;
 }
@@ -169,7 +208,14 @@ svg
 .intro p {
     padding: 14px 0;
 }
-
+.skillsection h1 {
+    font-family: 'Oswald', sans-serif;
+    padding-top: 44px;
+    padding-left: 50px;
+    text-align: left;
+    padding-bottom: 20px;
+    color:#e4bcfd
+}
 .skills {
     display: flex;
     color: rgb(237, 210, 210);
@@ -179,7 +225,7 @@ svg
     width: 50vw;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 10%;
+    border-radius: 24px;
     margin-bottom: 20px;
     margin-left: 12vw;
 }
@@ -187,9 +233,12 @@ svg
 #html {
     width: 190px;
     height: 13px;
-    background-color: red;
+    background-color: rgb(11, 4, 65);
+    border-radius: 8px;
+    box-shadow: 0 0 10px aliceblue;
+
     margin-top: 11px;
-    margin-left: 2px;
+    margin-left: 4px;
     margin-right: 2px;
 
 }
@@ -197,37 +246,45 @@ svg
 #css {
     width: 190px;
     height: 13px;
-    background-color: red;
+    background-color: rgb(11, 4, 65);
+    box-shadow: 0 0 10px aliceblue;
+    border-radius: 8px;
     margin: 15px;
-    margin-left: 2px;
+    margin-left: 4px;
     margin-right: 2px
 }
 
 #cpp {
     width: 160px;
     height: 13px;
-    background-color: red;
+    background-color: rgb(11, 4, 65);
+    box-shadow: 0 0 10px aliceblue;
+    border-radius: 8px;
     margin: 15px;
-    margin-left: 2px;
-    margin-right: 2px border: 2px solid black;
+    margin-left: 4px;
+    margin-right: 2px ;
 }
 
 #js {
     width: 130px;
     height: 13px;
-    background-color: red;
+    background-color: rgb(11, 4, 65);
+    box-shadow: 0 0 10px aliceblue;
+    border-radius: 8px;
     margin: 15px;
-    margin-left: 2px;
-    margin-right: 2px border: 2px solid black;
+    margin-left: 4px;
+    margin-right: 2px;
 }
 
 #python {
     width: 140px;
     height: 13px;
-    background-color: red;
+    background-color: rgb(11, 4, 65);
+    box-shadow: 0 0 10px aliceblue;
+    border-radius: 8px;
     margin: 15px;
-    margin-left: 2px;
-    margin-right: 2px border: 2px solid black;
+    margin-left: 4px;
+    margin-right: 2px;
 }
 
 
@@ -240,7 +297,7 @@ p.percent {
     position: absolute;
     font-family: 'Agdasima', sans-serif;
     font-weight: bold;
-    background-color:  rgba(29, 189, 221, 0.932);
+    background-color:  rgba(120, 85, 154, 0.801);
     height: 100vh;
     transition: transform 0.3s ease-in;
 }
@@ -292,7 +349,21 @@ p.percent {
     {
         width: 70vw;
     }
- 
+    .skillsection{
+        width: 70vw;
+    }
+    .contactform{
+        width: 70vw;
+    }
+    .contactform form div input {
+        width: 310px;
+        border-radius: 6px;
+        font-size: 14px;
+        padding: 3px;
+    }
+    .icons{
+        padding-top: 25px;
+    }
 
 }
 
@@ -309,15 +380,33 @@ p.percent {
         width: 30vh;
         margin: 5vh 0 -20vh 0;
     }
+
 }
 
-@media (max-width: 730px) {
+@media (max-width: 730px) 
+{
     .devinfo{
         font-size: 15px;
+        padding-top: 4px;
     }
-     
+    .icons{
+        padding-top: 15px;
+    }
+  .skills
+  {
+    box-shadow: none;
   }
-  .skillist{
+  .contactform form div input {
+    width: 200px;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 3px;
+}
+.contactform{
+    text-align: left;
+}
+}
+.skillist{
     color: white;
     font-size: 22px;
 
@@ -325,5 +414,22 @@ p.percent {
   .percentageno{
     color: white;
     font-size: 22px;
+    padding-left: 2px;
+  }
+  @media (width >=1300px) {
+    .skills {
+        display: flex;
+        color: rgb(237, 210, 210);
+        justify-content: center;
+        margin-top: 15px;
+        box-shadow: 0 0 12px;
+        width: 650px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 24px;
+        margin-bottom: 20px;
+        margin-left: 158px;
+    }
+    
   }
   
