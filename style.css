@@ -196,6 +196,7 @@ form h1{
     margin-right: 5vw;
     margin-top: 10vh;
     border-radius: 24px;
+    max-height: 500px;
     box-shadow: 0 0 20px rgb(118, 14, 215);
 }
 .intro {
@@ -343,6 +344,16 @@ p.percent {
     top: 10px;
     cursor: pointer;
 }
+.skillist{
+    color: white;
+    font-size: 22px;
+
+  }
+  .percentageno{
+    color: white;
+    font-size: 22px;
+    padding-left: 2px;
+  }
 
 @media (width <= 1250px) {
     .containermain
@@ -396,26 +407,94 @@ p.percent {
   {
     box-shadow: none;
   }
+  .skillsection{
+    max-height: 400px;
+  }
   .contactform form div input {
     width: 200px;
     border-radius: 6px;
     font-size: 14px;
-    padding: 3px;
+    padding: 0 3px;
+    margin-left: 5px;
+}
+label
+{
+    margin-left: 3px;
 }
 .contactform{
     text-align: left;
 }
+h1
+{
+    font-size: 30px;
+    margin-left: 10px;
 }
 .skillist{
-    color: white;
-    font-size: 22px;
+    font-size: 18px;
 
-  }
-  .percentageno{
-    color: white;
-    font-size: 22px;
-    padding-left: 2px;
-  }
+}
+.percentageno{
+    font-size: 18px;
+
+}
+#html {
+    width: 140px;
+    height: 9px;
+    background-color: rgb(11, 4, 65);
+    border-radius: 8px;
+    box-shadow: 0 0 7px aliceblue;
+
+    margin-top: 9px;
+    margin-left: 4px;
+    margin-right: 2px;
+
+}
+
+#css {
+    width: 100px;
+    height: 9px;
+    background-color: rgb(11, 4, 65);
+    box-shadow: 0 0 7px aliceblue;
+    border-radius: 8px;
+    margin: 13px;
+    margin-left: 4px;
+    margin-right: 2px
+}
+
+#cpp {
+    width: 115px;
+    height: 9px;
+    background-color: rgb(11, 4, 65);
+    box-shadow: 0 0 7px aliceblue;
+    border-radius: 8px;
+    margin: 13px;
+    margin-left: 4px;
+    margin-right: 2px ;
+}
+
+#js {
+    width: 80px;
+    height: 9px;
+    background-color: rgb(11, 4, 65);
+    box-shadow: 0 0 7px aliceblue;
+    border-radius: 8px;
+    margin: 13px;
+    margin-left: 4px;
+    margin-right: 2px;
+}
+
+#python {
+    width: 80px;
+    height: 9px;
+    background-color: rgb(11, 4, 65);
+    box-shadow: 0 0 7px aliceblue;
+    border-radius: 8px;
+    margin: 13px;
+    margin-left: 4px;
+    margin-right: 2px;
+}
+}
+
   @media (width >=1300px) {
     .skills {
         display: flex;
